@@ -139,7 +139,7 @@ namespace json {
 		// access value with string
 		std::string &operator[](std::string &n_key)
 		{
-			for (int i = 0; i < size; i++)
+			for (long long int i = 0; i < size; i++)
 			{
 				if (key[i] == n_key)
 				{
@@ -152,7 +152,7 @@ namespace json {
 		}
 		std::string &operator[](char *n_key)
 		{
-			for (int i = 0; i < size; i++)
+			for (long long int i = 0; i < size; i++)
 			{
 				if (key[i] == n_key)
 				{
